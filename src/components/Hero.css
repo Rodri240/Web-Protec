@@ -1,0 +1,58 @@
+.hero-section {
+  @apply relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-900;
+}
+.hero-bg-pattern {
+  @apply absolute inset-0 opacity-10;
+}
+.hero-gradient {
+  @apply absolute inset-0 bg-gradient-to-br from-brand-900 via-brand-800 to-[#0a3040];
+  opacity: 0.97;
+}
+.hero-circle-left {
+  @apply absolute top-1/4 -left-32 w-96 h-96 bg-accent-500/15 rounded-full blur-3xl;
+}
+.hero-circle-right {
+  @apply absolute bottom-1/4 -right-32 w-96 h-96 bg-accent-400/10 rounded-full blur-3xl;
+}
+.hero-content {
+  @apply relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto;
+}
+.hero-badge {
+  @apply inline-flex items-center gap-2 px-4 py-2 bg-accent-500/20 border border-accent-500/30 rounded-full text-accent-400 text-sm font-medium mb-8;
+}
+.hero-badge-dot {
+  @apply w-2 h-2 bg-accent-400 rounded-full animate-pulse;
+}
+.hero-title {
+  @apply text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight;
+}
+.hero-title-accent {
+  @apply block text-accent-400;
+}
+.hero-subtitle {
+  @apply text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed;
+}
+.hero-actions {
+  @apply flex flex-col sm:flex-row gap-4 justify-center;
+}
+.hero-btn-primary {
+  @apply px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-bold text-base rounded-xl transition-all duration-200 shadow-lg shadow-accent-500/30 hover:-translate-y-0.5;
+}
+.hero-btn-secondary {
+  @apply px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-base rounded-xl border border-white/20 transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center gap-2;
+}
+.hero-stats {
+  @apply mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto;
+}
+.hero-stat {
+  @apply text-center;
+}
+.hero-stat-value {
+  @apply text-4xl font-bold text-accent-400;
+}
+.hero-stat-label {
+  @apply text-gray-400 text-sm mt-1;
+}
+.hero-scroll-cue {
+  @apply absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 hover:text-white transition-colors animate-bounce;
+}

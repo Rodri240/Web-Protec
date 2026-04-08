@@ -1,0 +1,95 @@
+.navbar-header {
+  @apply sticky top-0 left-0 right-0 z-50 transition-all duration-300;
+}
+
+.navbar-header--transparent {
+  @apply bg-brand-900/95 backdrop-blur-md;
+}
+
+.navbar-header--solid {
+  @apply bg-brand-900 shadow-lg;
+}
+
+.navbar-inner {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.navbar-row {
+  @apply flex items-center justify-between h-16;
+}
+
+.navbar-logo {
+  @apply flex items-center gap-3 hover:opacity-80 transition-opacity;
+}
+
+.navbar-logo-img {
+  @apply h-10 w-auto object-contain;
+}
+
+.navbar-logo-text {
+  @apply text-white font-bold text-xl tracking-wide hover:text-accent-300 transition-colors;
+}
+
+.navbar-nav {
+  @apply hidden md:flex items-center gap-1;
+}
+
+.navbar-nav-item {
+  @apply relative;
+}
+
+.navbar-nav-link {
+  @apply px-4 py-2 text-gray-300 hover:text-accent-300 font-medium text-sm transition-colors rounded-lg hover:bg-white/5;
+}
+
+.navbar-dropdown-btn {
+  @apply flex items-center gap-1 px-4 py-2 text-gray-300 hover:text-accent-300 font-medium text-sm transition-colors rounded-lg hover:bg-white/5;
+}
+
+.navbar-chevron {
+  @apply w-4 h-4 transition-transform;
+}
+
+.navbar-chevron--open {
+  @apply rotate-180;
+}
+
+.navbar-dropdown {
+  @apply absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden;
+}
+
+.navbar-dropdown-item {
+  @apply block px-4 py-3 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-colors border-b border-gray-50 last:border-0;
+}
+
+.navbar-cta {
+  @apply ml-4 px-5 py-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm rounded-lg transition-colors shadow-md;
+}
+
+.navbar-hamburger {
+  @apply md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors;
+}
+
+.navbar-mobile {
+  @apply md:hidden bg-brand-900 border-t border-white/10 px-4 pb-4;
+}
+
+.navbar-mobile-dropdown-btn {
+  @apply flex items-center justify-between w-full py-3 text-gray-200 font-medium text-sm border-b border-white/10;
+}
+
+.navbar-mobile-children {
+  @apply pl-4;
+}
+
+.navbar-mobile-child {
+  @apply block py-2 text-sm text-gray-300 hover:text-accent-300 transition-colors;
+}
+
+.navbar-mobile-link {
+  @apply block py-3 text-gray-300 font-medium text-sm border-b border-white/10 hover:text-accent-300 transition-colors;
+}
+
+.navbar-mobile-cta {
+  @apply mt-4 block text-center px-5 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm rounded-lg transition-colors;
+}

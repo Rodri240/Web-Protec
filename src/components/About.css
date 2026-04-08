@@ -1,0 +1,71 @@
+.about-section {
+    @apply py-24 bg-white;
+  }
+
+  .about-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .about-header {
+    @apply text-center mb-16;
+  }
+
+  .about-section-label {
+    @apply text-accent-500 font-semibold text-sm uppercase tracking-widest;
+  }
+
+  .about-section-title {
+    @apply mt-2 text-4xl sm:text-5xl font-bold text-brand-900;
+  }
+
+  .about-section-divider {
+    @apply mt-4 w-16 h-1 bg-accent-500 mx-auto rounded-full;
+  }
+
+  .about-grid {
+    @apply grid lg:grid-cols-2 gap-16 items-center;
+  }
+
+  .about-paragraph {
+    @apply text-lg text-gray-600 leading-relaxed mb-6;
+  }
+
+  .about-name {
+    @apply font-bold text-brand-900;
+  }
+
+  .about-city {
+    @apply font-semibold text-brand-700;
+  }
+
+  .about-actions {
+    @apply mt-10 flex gap-4;
+  }
+
+  .about-btn-primary {
+    @apply px-6 py-3 bg-brand-900 hover:bg-brand-700 text-white font-semibold rounded-xl transition-colors;
+  }
+
+  .about-btn-secondary {
+    @apply px-6 py-3 border-2 border-brand-900 text-brand-900 hover:bg-brand-900 hover:text-white font-semibold rounded-xl transition-colors;
+  }
+
+  .about-highlights {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-6;
+  }
+
+  .about-card {
+    @apply p-6 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-brand-50 hover:border-brand-200 transition-colors;
+  }
+
+  .about-card-icon {
+    @apply w-12 h-12 bg-accent-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-accent-500/20 transition-colors;
+  }
+
+  .about-card-title {
+    @apply font-bold text-brand-900 mb-2;
+  }
+
+.about-card-desc {
+  @apply text-gray-600 text-sm leading-relaxed;
+}

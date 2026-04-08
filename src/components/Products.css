@@ -1,0 +1,71 @@
+.products-section {
+    @apply py-24 bg-white;
+  }
+
+  .products-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .products-header {
+    @apply text-center mb-16;
+  }
+
+  .products-section-label {
+    @apply text-accent-500 font-semibold text-sm uppercase tracking-widest;
+  }
+
+  .products-section-title {
+    @apply mt-2 text-4xl sm:text-5xl font-bold text-brand-900;
+  }
+
+  .products-section-divider {
+    @apply mt-4 w-16 h-1 bg-accent-500 mx-auto rounded-full;
+  }
+
+  .products-section-desc {
+    @apply mt-6 text-gray-500 max-w-xl mx-auto text-lg;
+  }
+
+  .products-grid {
+    @apply grid md:grid-cols-3 gap-8;
+  }
+
+  .product-card {
+    @apply rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .product-card-header {
+    @apply p-8;
+  }
+
+  .product-card-icon {
+    @apply w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-4;
+  }
+
+  .product-card-category {
+    @apply text-white/70 text-xs font-semibold uppercase tracking-wider;
+  }
+
+  .product-card-name {
+    @apply text-2xl font-bold text-white mt-1;
+  }
+
+  .product-card-body {
+    @apply bg-white p-8;
+  }
+
+  .product-card-desc {
+    @apply text-gray-500 text-sm leading-relaxed mb-6;
+  }
+
+  .product-benefits {
+    @apply space-y-2;
+  }
+
+  .product-benefit {
+    @apply flex items-center gap-2 text-sm text-gray-700;
+  }
+
+.product-benefit-dot {
+  @apply w-1.5 h-1.5 bg-accent-500 rounded-full flex-shrink-0;
+}

@@ -1,0 +1,127 @@
+.contact-section {
+    @apply py-24 bg-slate-50;
+  }
+
+  .contact-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .contact-header {
+    @apply text-center mb-16;
+  }
+
+  .contact-section-label {
+    @apply text-accent-500 font-semibold text-sm uppercase tracking-widest;
+  }
+
+  .contact-section-title {
+    @apply mt-2 text-4xl sm:text-5xl font-bold text-brand-900;
+  }
+
+  .contact-section-divider {
+    @apply mt-4 w-16 h-1 bg-accent-500 mx-auto rounded-full;
+  }
+
+  .contact-grid {
+    @apply grid lg:grid-cols-2 gap-12;
+  }
+
+  .contact-info {
+    @apply space-y-6;
+  }
+
+  .contact-heading {
+    @apply text-2xl font-bold text-brand-900 mb-2;
+  }
+
+  .contact-subtext {
+    @apply text-gray-500 leading-relaxed;
+  }
+
+  .contact-offices {
+    @apply space-y-4;
+  }
+
+  .contact-office-card {
+    @apply flex gap-4 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm;
+  }
+
+  .contact-office-icon {
+    @apply w-10 h-10 bg-brand-900 rounded-xl flex items-center justify-center flex-shrink-0;
+  }
+
+  .contact-office-city {
+    @apply font-semibold text-brand-900;
+  }
+
+  .contact-office-detail {
+    @apply text-xs text-accent-500 font-medium mb-1;
+  }
+
+  .contact-office-address {
+    @apply text-sm text-gray-500 flex items-center gap-1;
+  }
+
+  .contact-office-phone {
+    @apply text-sm text-gray-700 flex items-center gap-1 mt-1 font-medium;
+  }
+
+  .contact-email-link {
+    @apply flex items-center gap-3 p-5 bg-brand-900 rounded-2xl text-white hover:bg-brand-700 transition-colors;
+  }
+
+  .contact-email-icon {
+    @apply w-10 h-10 bg-accent-500 rounded-xl flex items-center justify-center flex-shrink-0;
+  }
+
+  .contact-email-label {
+    @apply text-xs text-gray-300 mb-0.5;
+  }
+
+  .contact-email-value {
+    @apply font-semibold group-hover:text-accent-300 transition-colors;
+  }
+
+  .contact-form-wrapper {
+    @apply bg-white rounded-3xl p-8 shadow-sm border border-gray-100;
+  }
+
+  .contact-success {
+    @apply flex flex-col items-center justify-center h-full py-16 text-center;
+  }
+
+  .contact-success-title {
+    @apply text-xl font-bold text-brand-900 mb-2;
+  }
+
+  .contact-success-text {
+    @apply text-gray-500;
+  }
+
+  .contact-form {
+    @apply space-y-5;
+  }
+
+  .contact-form-title {
+    @apply text-xl font-bold text-brand-900 mb-6;
+  }
+
+  .contact-form-row {
+    @apply grid sm:grid-cols-2 gap-4;
+  }
+
+  .contact-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+
+  .contact-input {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition-all text-sm;
+  }
+
+  .contact-textarea {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition-all text-sm resize-none;
+  }
+
+.contact-submit {
+  @apply w-full flex items-center justify-center gap-2 px-6 py-4 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-xl transition-colors shadow-lg shadow-accent-500/30;
+}

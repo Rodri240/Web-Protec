@@ -1,0 +1,87 @@
+.footer {
+    @apply bg-brand-900 text-gray-300;
+  }
+
+  .footer-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .footer-main {
+    @apply py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10;
+  }
+
+  .footer-brand {
+    @apply lg:col-span-2;
+  }
+
+  .footer-logo {
+    @apply flex items-center gap-2 mb-4;
+  }
+
+  .footer-logo-icon {
+    @apply w-8 h-8 bg-accent-500 rounded-lg flex items-center justify-center;
+  }
+
+  .footer-logo-text {
+    @apply text-white font-bold text-xl tracking-wide;
+  }
+
+  .footer-tagline {
+    @apply text-gray-400 text-sm leading-relaxed max-w-xs;
+  }
+
+  .footer-nav-pills {
+    @apply mt-6 flex gap-3;
+  }
+
+  .footer-nav-pill {
+    @apply px-3 py-1.5 text-xs bg-white/10 hover:bg-accent-500 text-gray-300 hover:text-white rounded-lg transition-colors;
+  }
+
+  .footer-col-title {
+    @apply text-white font-semibold mb-4 text-sm uppercase tracking-wider;
+  }
+
+  .footer-col-title--spaced {
+    @apply text-white font-semibold mt-8 mb-4 text-sm uppercase tracking-wider;
+  }
+
+  .footer-links {
+    @apply space-y-2;
+  }
+
+  .footer-link {
+    @apply text-sm text-gray-400 hover:text-accent-400 transition-colors leading-relaxed;
+  }
+
+  .footer-contact-list {
+    @apply space-y-3;
+  }
+
+  .footer-contact-item {
+    @apply flex gap-3;
+  }
+
+  .footer-contact-icon {
+    @apply w-4 h-4 text-accent-500 flex-shrink-0 mt-0.5;
+  }
+
+  .footer-contact-label {
+    @apply text-sm;
+  }
+
+  .footer-contact-city {
+    @apply text-gray-300;
+  }
+
+  .footer-contact-phone {
+    @apply text-gray-400;
+  }
+
+  .footer-email {
+    @apply text-sm text-gray-400 hover:text-accent-400 transition-colors;
+  }
+
+.footer-bottom {
+  @apply border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500;
+}

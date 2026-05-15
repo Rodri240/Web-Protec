@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import './Navbar.css'
-import logo from '../images/logo.png'
+const logo = new URL('../images/logo.png', import.meta.url).href
 
 const navLinks = [
   { label: 'Empresa', href: '#empresa' },

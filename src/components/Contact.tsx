@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react'
-import './Contact.css'
 
 const offices = [
   {
@@ -33,7 +32,7 @@ export default function Contact() {
     setError('')
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/uru240@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/info@protec.com.uy', {
         method: 'POST',
         headers: {
           Accept: 'application/json',

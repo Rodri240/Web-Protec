@@ -1,24 +1,8 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react'
+import "./Contact.css"
 
-const offices = [
-  {
-    city: 'Montevideo',
-    phone: '096 121 851',
-    detail: 'Atención al cliente',
-  },
-  {
-    city: 'Salto y Litoral Norte',
-    phone: '096 121 853',
-    detail: 'Atención al cliente',
-  },
-  {
-    city: 'Oficina Salto',
-    address: 'Brasil 1132, Salto, Uruguay (50000)',
-    phone: '+(598) 4732-0557',
-    detail: 'Oficina principal',
-  },
-]
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })

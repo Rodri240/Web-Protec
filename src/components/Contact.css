@@ -125,3 +125,11 @@
 .contact-submit {
   @apply w-full flex items-center justify-center gap-2 px-6 py-4 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-xl transition-colors shadow-lg shadow-accent-500/30;
 }
+
+.contact-submit:disabled {
+  @apply cursor-not-allowed opacity-60;
+}
+
+.contact-error {
+  @apply text-sm text-red-600;
+}

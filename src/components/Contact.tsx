@@ -24,13 +24,43 @@ const offices = [
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Simulate form submission
-    setSent(true)
-    setForm({ name: '', email: '', phone: '', message: '' })
-    setTimeout(() => setSent(false), 5000)
+    setSending(true)
+    setError('')
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/uru240@gmail.com', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          Nombre: form.name,
+          Email: form.email,
+          Teléfono: form.phone || 'No indicado',
+          Consulta: form.message,
+          _subject: `Nueva consulta de ${form.name}`,
+          _replyto: form.email,
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error('No se pudo enviar el mensaje')
+      }
+
+      setSent(true)
+      setForm({ name: '', email: '', phone: '', message: '' })
+      setTimeout(() => setSent(false), 5000)
+    } catch {
+      setError('No pudimos enviar su mensaje. Intente nuevamente o escríbanos a info@protec.com.uy.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -119,8 +149,9 @@ export default function Contact() {
 
                 <div className="contact-form-row">
                   <div>
-                    <label className="contact-label">Nombre *</label>
+                    <label htmlFor="contact-name" className="contact-label">Nombre *</label>
                     <input
+                      id="contact-name"
                       type="text"
                       required
                       value={form.name}
@@ -130,8 +161,9 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label className="contact-label">Teléfono</label>
+                    <label htmlFor="contact-phone" className="contact-label">Teléfono</label>
                     <input
+                      id="contact-phone"
                       type="tel"
                       value={form.phone}
                       onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
@@ -142,8 +174,9 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="contact-label">Email *</label>
+                  <label htmlFor="contact-email" className="contact-label">Email *</label>
                   <input
+                    id="contact-email"
                     type="email"
                     required
                     value={form.email}
@@ -154,8 +187,9 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="contact-label">Mensaje *</label>
+                  <label htmlFor="contact-message" className="contact-label">Mensaje *</label>
                   <textarea
+                    id="contact-message"
                     required
                     rows={5}
                     value={form.message}
@@ -165,9 +199,11 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" className="contact-submit">
+                {error && <p className="contact-error" role="alert">{error}</p>}
+
+                <button type="submit" className="contact-submit" disabled={sending}>
                   <Send className="w-4 h-4" />
-                  Enviar mensaje
+                  {sending ? 'Enviando...' : 'Enviar mensaje'}
                 </button>
               </form>
             )}

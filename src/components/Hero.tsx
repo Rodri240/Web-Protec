@@ -4,6 +4,8 @@ import './Hero.css'
 export default function Hero() {
   return (
     <section id="inicio" className="hero-section">
+      <div className="hero-building-image" aria-hidden="true" />
+
       {/* Background pattern */}
       <div className="hero-bg-pattern">
         <div

@@ -1,12 +1,16 @@
 .hero-section {
   @apply relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-900;
 }
+.hero-building-image {
+  @apply absolute inset-0 bg-cover bg-center;
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85');
+}
 .hero-bg-pattern {
   @apply absolute inset-0 opacity-10;
 }
 .hero-gradient {
   @apply absolute inset-0 bg-gradient-to-br from-brand-900 via-brand-800 to-[#0a3040];
-  opacity: 0.97;
+  opacity: 0.88;
 }
 .hero-circle-left {
   @apply absolute top-1/4 -left-32 w-96 h-96 bg-accent-500/15 rounded-full blur-3xl;

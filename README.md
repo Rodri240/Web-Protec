@@ -34,3 +34,10 @@ Pasos para habilitarlo:
 Base path configurado en Vite: `/Web-Protec/`
 
 URL esperada: `https://rodri240.github.io/Web-Protec/`
+
+## Formulario de contacto
+
+El formulario envía las consultas a `info@protec.com.uy` mediante FormSubmit,
+por lo que funciona también en GitHub Pages sin un backend propio. La primera
+vez que se envía una consulta, FormSubmit solicita confirmar la dirección de
+destino desde el correo de activación.

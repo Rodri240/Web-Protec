@@ -28,7 +28,7 @@ export default function Contact() {
     setError('')
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/info@protec.com.uy', {
+      const response = await fetch('https://formsubmit.co/ajax/uru240@gmail.com', {
         method: 'POST',
         headers: {
           Accept: 'application/json',

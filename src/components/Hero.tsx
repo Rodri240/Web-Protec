@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="hero-badge-dot" />
-          Más de 15 años de experiencia
+          Más de 30 años de experiencia
         </div>
 
         <h1 className="hero-title">
@@ -56,7 +56,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="hero-stats">
           {[
-            { value: '15+', label: 'Años de experiencia' },
+            { value: '30+', label: 'Años de experiencia' },
             { value: '2', label: 'Oficinas en Uruguay' },
             { value: '100%', label: 'Cobertura nacional' },
           ].map(stat => (

@@ -16,21 +16,6 @@ const offices = [
   },
 ]
 
-
-const offices: Office[] = [
-  {
-    city: 'Montevideo',
-    detail: 'Atención en Montevideo',
-    phone: '096 121 851',
-  },
-  {
-    city: 'Salto y Litoral Norte',
-    detail: 'Atención en el litoral norte',
-    address: 'Brasil 1132, Salto (50000)',
-    phone: '096 121 853',
-  },
-]
-
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
